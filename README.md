@@ -36,71 +36,71 @@ Usage
 
 This code will log something like this:
 
-[
-  {
-    "tweetId": "1234",
-    "caption": "Curry!",
-    "date": "Sun Jan 02 12:00:00 +0000 2017",
-    "videos": [
+    [
       {
-        "bitrate": 320000,
-        "content_type": "video/mp4",
-        "url": "https://video.twimg.com/ext_tw_video/6789/pr/vid/240x240/whatever.mp4"
+        "tweetId": "1234",
+        "caption": "Curry!",
+        "date": "Sun Jan 02 12:00:00 +0000 2017",
+        "videos": [
+          {
+            "bitrate": 320000,
+            "content_type": "video/mp4",
+            "url": "https://video.twimg.com/ext_tw_video/6789/pr/vid/240x240/whatever.mp4"
+          },
+          {
+            "bitrate": 832000,
+            "content_type": "video/mp4",
+            "url": "https://video.twimg.com/ext_tw_video/6789/pr/vid/480x480/whatever.mp4"
+          },
+          {
+            "content_type": "application/x-mpegURL",
+            "url": "https://video.twimg.com/ext_tw_video/6789/pr/pl/whatever.m3u8"
+          }
+        ]
       },
       {
-        "bitrate": 832000,
-        "content_type": "video/mp4",
-        "url": "https://video.twimg.com/ext_tw_video/6789/pr/vid/480x480/whatever.mp4"
+        "tweetId": "2345",
+        "caption": "",
+        "date": "Sun Jan 02 12:30:00 +0000 2017",
+        "videos": [
+          {
+            "bitrate": 832000,
+            "content_type": "video/mp4",
+            "url": "https://video.twimg.com/ext_tw_video/5678/pr/vid/480x480/whatever.mp4"
+          },
+          {
+            "bitrate": 320000,
+            "content_type": "video/mp4",
+            "url": "https://video.twimg.com/ext_tw_video/5687/pr/vid/240x240/whatever.mp4"
+          },
+          {
+            "content_type": "application/x-mpegURL",
+            "url": "https://video.twimg.com/ext_tw_video/5678/pr/pl/whatever.m3u8"
+          }
+        ]
       },
       {
-        "content_type": "application/x-mpegURL",
-        "url": "https://video.twimg.com/ext_tw_video/6789/pr/pl/whatever.m3u8"
+        "tweetId": "3456",
+        "caption": "Numbers game",
+        "date": "Sun Jan 02 20:00:00 +0000 2017",
+        "videos": [
+          {
+            "content_type": "application/x-mpegURL",
+            "url": "https://video.twimg.com/ext_tw_video/4567/pr/pl/whatever.m3u8"
+          },
+          {
+            "bitrate": 320000,
+            "content_type": "video/mp4",
+            "url": "https://video.twimg.com/ext_tw_video/4576/pr/vid/240x240/whatever.mp4"
+          },
+          {
+            "bitrate": 832000,
+            "content_type": "video/mp4",
+            "url": "https://video.twimg.com/ext_tw_video/5678/pr/vid/480x480/whatever.mp4"
+          }
+        ]
       }
     ]
-  },
-  {
-    "tweetId": "2345",
-    "caption": "",
-    "date": "Sun Jan 02 12:30:00 +0000 2017",
-    "videos": [
-      {
-        "bitrate": 832000,
-        "content_type": "video/mp4",
-        "url": "https://video.twimg.com/ext_tw_video/5678/pr/vid/480x480/whatever.mp4"
-      },
-      {
-        "bitrate": 320000,
-        "content_type": "video/mp4",
-        "url": "https://video.twimg.com/ext_tw_video/5687/pr/vid/240x240/whatever.mp4"
-      },
-      {
-        "content_type": "application/x-mpegURL",
-        "url": "https://video.twimg.com/ext_tw_video/5678/pr/pl/whatever.m3u8"
-      }
-    ]
-  },
-  {
-    "tweetId": "3456",
-    "caption": "Numbers game",
-    "date": "Sun Jan 02 20:00:00 +0000 2017",
-    "videos": [
-      {
-        "content_type": "application/x-mpegURL",
-        "url": "https://video.twimg.com/ext_tw_video/4567/pr/pl/whatever.m3u8"
-      },
-      {
-        "bitrate": 320000,
-        "content_type": "video/mp4",
-        "url": "https://video.twimg.com/ext_tw_video/4576/pr/vid/240x240/whatever.mp4"
-      },
-      {
-        "bitrate": 832000,
-        "content_type": "video/mp4",
-        "url": "https://video.twimg.com/ext_tw_video/5678/pr/vid/480x480/whatever.mp4"
-      }
-    ]
-  }
-]
 
 Tests
 -----
