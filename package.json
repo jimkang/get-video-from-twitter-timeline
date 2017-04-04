@@ -1,0 +1,34 @@
+{
+  "name": "get-video-from-twitter-timeline",
+  "version": "1.0.0",
+  "description": "Gets video URLs from a given Twitter account.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:jimkang/get-video-from-twitter-timeline.git"
+  },
+  "keywords": [
+    "twitter",
+    "video"
+  ],
+  "author": "Jim Kang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jimkang/get-video-from-twitter-timeline/issues"
+  },
+  "homepage": "https://github.com/jimkang/get-video-from-twitter-timeline",
+  "devDependencies": {
+    "assert-no-error": "^1.0.0",
+    "eslint": "^3.6.1",
+    "tape": "^4.6.0"
+  },
+  "dependencies": {
+    "lodash.compact": "^3.0.1",
+    "object-path-exists": "^1.0.0",
+    "standard-bail": "^2.0.1",
+    "twit": "^2.2.5"
+  }
+}
