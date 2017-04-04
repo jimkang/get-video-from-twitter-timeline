@@ -110,9 +110,9 @@ Run tests by creating a `config.js` file in the project root that looks like thi
     module.exports = {
       twitter: {
         consumer_key: '<Your Twitter consumer key>',
-        consumer_secret: 'Your Twitter consumer secret>',
+        consumer_secret: '<Your Twitter consumer secret>',
         access_token: '<Your Twitter access token>',
-        access_token_secret: 'Your Twitter access token secret'
+        access_token_secret: '<Your Twitter access token secret>'
       }
     };
 
