@@ -1,11 +1,7 @@
 var Twit = require('twit');
 var sb = require('standard-bail')();
 var compact = require('lodash.compact');
-var pathExists = require('object-path-exists');
-
-var shortenedTwitterLinkWithLeadingSpaceRegex = /\s?https:\/\/t.co\/[\w\d]+/g;
-
-var videoVariantsPath = ['extended_entities', 'media', '0', 'video_info', 'variants'];
+var boilTweetToVideo = require('boil-tweet-to-video');
 
 function getVideoFromTwitterTimeline(opts, done) {
   var twitterCreds;
@@ -42,20 +38,9 @@ function getVideoFromTwitterTimeline(opts, done) {
 }
 
 function filterTweetsToVideo(tweets, response, done) {
-  var videoTweets = compact(tweets.map(filterTweetToVideo));
+  var videoTweets = compact(tweets.map(boilTweetToVideo));
   // console.log(videoTweets);
   done(null, videoTweets);
-}
-
-function filterTweetToVideo(tweet) {
-  if (pathExists(tweet, videoVariantsPath)) {
-    return {
-      tweetId: tweet.id_str,
-      caption: tweet.text.replace(shortenedTwitterLinkWithLeadingSpaceRegex, ''),
-      date: tweet.created_at,
-      videos: tweet.extended_entities.media[0].video_info.variants
-    };
-  }
 }
 
 module.exports = getVideoFromTwitterTimeline;

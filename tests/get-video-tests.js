@@ -17,7 +17,7 @@ function getVideosTest(t) {
     t.ok(videoPackages.length > 0, 'At least one video package was retrieved.');
     videoPackages.forEach(checkPackage);
 
-    // console.log(JSON.stringify(videoPackages, null, '  '));
+    console.log(JSON.stringify(videoPackages, null, '  '));
     t.end();
   }
 
